@@ -75,9 +75,37 @@ import type { StorageContextType } from './storage';
 import './style/root.css';
 import './style/deprecation.css';
 
-export * from './icons';
-export * from './toolbar';
-export * from './ui';
+import {
+  ArgumentIcon,
+  ChevronDownIcon,
+  ChevronLeftIcon,
+  ChevronUpIcon,
+  CloseIcon,
+  DeprecatedArgumentIcon,
+  DeprecatedFieldIcon,
+  DocsIcon,
+  FieldIcon,
+  HistoryIcon,
+  KeyboardShortcutIcon,
+  PenIcon,
+  PlayIcon,
+  PlusIcon,
+  PrettifyIcon,
+  RootTypeIcon,
+  SettingsIcon,
+  StarFilledIcon,
+  StarIcon,
+  StopIcon,
+  TypeIcon,
+} from './icons';
+import { ExecuteButton, ToolbarButton } from './toolbar';
+import {
+  Button,
+  ButtonGroup,
+  Dropdown,
+  MarkdownContent,
+  UnstyledButton,
+} from './ui';
 
 export {
   // editor
@@ -118,6 +146,28 @@ export {
   HistoryContextProvider,
   useHistoryContext,
   useSelectHistoryItem,
+  // icons
+  ArgumentIcon,
+  ChevronDownIcon,
+  ChevronLeftIcon,
+  ChevronUpIcon,
+  CloseIcon,
+  DeprecatedArgumentIcon,
+  DeprecatedFieldIcon,
+  DocsIcon,
+  FieldIcon,
+  HistoryIcon,
+  KeyboardShortcutIcon,
+  PenIcon,
+  PlayIcon,
+  PlusIcon,
+  PrettifyIcon,
+  RootTypeIcon,
+  SettingsIcon,
+  StarFilledIcon,
+  StarIcon,
+  StopIcon,
+  TypeIcon,
   // schema
   SchemaContext,
   SchemaContextProvider,
@@ -126,11 +176,18 @@ export {
   StorageContext,
   StorageContextProvider,
   useStorageContext,
+  // toolbar
+  ExecuteButton,
+  ToolbarButton,
+  // ui
+  Button,
+  ButtonGroup,
+  Dropdown,
+  MarkdownContent,
+  UnstyledButton,
   // utility/resize
   useDragResize,
 };
-
-export * from './icons';
 
 export type {
   // editor
