@@ -6,7 +6,6 @@ import { useEditorContext } from './context';
 import {
   EditCallback,
   useChangeHandler,
-  useCompletion,
   useKeyMap,
   useMergeQuery,
   usePrettifyEditors,
@@ -127,8 +126,6 @@ export function useVariableEditor({
     'variables',
     useVariableEditor,
   );
-
-  useCompletion(variableEditor);
 
   useKeyMap(variableEditor, ['Cmd-Enter', 'Ctrl-Enter'], executionContext?.run);
   useKeyMap(variableEditor, ['Shift-Ctrl-P'], prettify);

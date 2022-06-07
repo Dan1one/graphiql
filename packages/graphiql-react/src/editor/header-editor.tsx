@@ -6,7 +6,6 @@ import { useEditorContext } from './context';
 import {
   EditCallback,
   useChangeHandler,
-  useCompletion,
   useKeyMap,
   useMergeQuery,
   usePrettifyEditors,
@@ -109,8 +108,6 @@ export function useHeaderEditor({
     'headers',
     useHeaderEditor,
   );
-
-  useCompletion(headerEditor);
 
   useKeyMap(headerEditor, ['Cmd-Enter', 'Ctrl-Enter'], executionContext?.run);
   useKeyMap(headerEditor, ['Shift-Ctrl-P'], prettify);
