@@ -26,6 +26,7 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
   CloseIcon,
+  CopyIcon,
   DocsIcon,
   EditorContextProvider,
   ExecuteButton,
@@ -37,6 +38,7 @@ import {
   HistoryContextProvider,
   HistoryIcon,
   KeyboardShortcutIcon,
+  MergeIcon,
   PrettifyIcon,
   QueryEditor,
   ResponseEditor,
@@ -672,8 +674,7 @@ class GraphiQLWithContext extends React.Component<
           }}
           title="Merge Query (Shift-Ctrl-M)"
           aria-label="Merge">
-          {/* TODO: use correct icon */}
-          <PrettifyIcon className="graphiql-toolbar-icon" />
+          <MergeIcon className="graphiql-toolbar-icon" />
         </ToolbarButton>
         <ToolbarButton
           onClick={() => {
@@ -681,8 +682,7 @@ class GraphiQLWithContext extends React.Component<
           }}
           title="Copy Query (Shift-Ctrl-C)"
           aria-label="Copy">
-          {/* TODO: use correct icon */}
-          <PrettifyIcon className="graphiql-toolbar-icon" />
+          <CopyIcon className="graphiql-toolbar-icon" />
         </ToolbarButton>
         {this.props.toolbar?.additionalContent
           ? this.props.toolbar.additionalContent
