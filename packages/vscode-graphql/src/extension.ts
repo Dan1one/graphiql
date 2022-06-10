@@ -53,6 +53,7 @@ export function activate(context: ExtensionContext) {
       { scheme: 'file', language: 'javascript' },
       { scheme: 'file', language: 'javascriptreact' },
       { scheme: 'file', language: 'typescript' },
+      { scheme: 'file', language: 'elixir' },
       { scheme: 'file', language: 'typescriptreact' },
     ],
     synchronize: {
@@ -70,7 +71,7 @@ export function activate(context: ExtensionContext) {
         ),
         // These ignore node_modules and .git by default
         workspace.createFileSystemWatcher(
-          '**/{*.graphql,*.graphqls,*.gql,*.js,*.mjs,*.cjs,*.esm,*.es,*.es6,*.jsx,*.ts,*.tsx}',
+          '**/{*.graphql,*.graphqls,*.gql,*.js,*.mjs,*.cjs,*.esm,*.es,*.es6,*.jsx,*.ts,*.tsx,*.ex,*.exs}',
         ),
       ],
     },
